@@ -91,7 +91,7 @@ if (strlen($_SESSION['bpmsaid'] == 0)) {
 							?>
 							<div class="stats-left">
 								<h5>Total</h5>
-								<h4>Citas</h4>
+								<h4>Visitas</h4>
 							</div>
 							<div class="stats-right">
 								<label> <?php echo $totalappointment; ?></label>
@@ -104,7 +104,7 @@ if (strlen($_SESSION['bpmsaid'] == 0)) {
 							?>
 							<div class="stats-left">
 								<h5>Total</h5>
-								<h4>Citas Aceptadas</h4>
+								<h4>Visitas Aceptadas</h4>
 							</div>
 							<div class="stats-right">
 								<label><?php echo $totalaccapt; ?></label>
@@ -124,7 +124,7 @@ if (strlen($_SESSION['bpmsaid'] == 0)) {
 							?>
 							<div class="stats-left ">
 								<h5>Total</h5>
-								<h4>Citas Rechazadas</h4>
+								<h4>Visitas Rechazadas</h4>
 							</div>
 							<div class="stats-right">
 								<label> <?php echo $totalrejapt; ?></label>

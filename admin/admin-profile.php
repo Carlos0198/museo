@@ -69,7 +69,7 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 					<h3 class="title1">Perfil Administrador</h3>
 					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
 						<div class="form-title">
-							<h4>Actualizar Perfil :</h4>
+							<h4>Actualizar Perfil:</h4>
 						</div>
 						<div class="form-body">
 							<form method="post">

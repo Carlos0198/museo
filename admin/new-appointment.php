@@ -54,13 +54,13 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="tables">
-					<h3 class="title1">Aceptar o Rechazar Citas</h3>
+					<h3 class="title1">Aceptar o Rechazar Visitas</h3>
 					
 					
 				
 					<div class="table-responsive bs-example widget-shadow">
-						<h4>Aceptar o Rechazar Citas:</h4>
-						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th> Número de Cita</th> <th>Nombre Cliente</th><th>Número de Móvil</th> <th>Fecha de Cita</th><th>Hora de Cita</th><th>Acción</th> </tr> </thead> <tbody>
+						<h4>Aceptar o Rechazar Visitas:</h4>
+						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th> Número de Visita</th> <th>Nombre Cliente</th><th>Número de Móvil</th> <th>Fecha de Visita</th><th>Hora de Visita</th><th>Acción</th> </tr> </thead> <tbody>
 <?php
 $ret=mysqli_query($con,"select *from  tblappointment where Status=''");
 $cnt=1;

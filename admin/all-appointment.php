@@ -12,7 +12,7 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Museo | Todas las Citas</title>
+<title>Museo | Todas las Visitas</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -54,13 +54,13 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="tables">
-					<h3 class="title1">Todas las Citas</h3>
+					<h3 class="title1">Todas las Visitas</h3>
 					
 					
 				
 					<div class="table-responsive bs-example widget-shadow">
-						<h4>Todas las Citas:</h4>
-						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th> Número de Cita</th> <th>Nombre Cliente</th><th>Número Celular</th> <th>Fecha de Cita</th><th>Hora de Cita</th><th>Acción</th> </tr> </thead> <tbody>
+						<h4>Todas las Visitas:</h4>
+						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th> Número de Visita</th> <th>Nombre Cliente</th><th>Número Celular</th> <th>Fecha de Visita</th><th>Hora de Visita</th><th>Acción</th> </tr> </thead> <tbody>
 <?php
 $ret=mysqli_query($con,"select *from  tblappointment");
 $cnt=1;
@@ -69,7 +69,7 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>
 
 						 <tr> <th scope="row"><?php echo $cnt;?></th> <td><?php  echo $row['AptNumber'];?></td> <td><?php  echo $row['Name'];?></td><td><?php  echo $row['PhoneNumber'];?></td><td><?php  echo $row['AptDate'];?></td> <td><?php  echo $row['AptTime'];?></td> <td><a href="view-appointment.php?viewid=<?php echo $row['ID'];?>">Detalle</a></td> </tr>   <?php 
-$cnt=$cnt+1;
+;
 }?></tbody> </table> 
 					</div>
 				</div>
@@ -91,7 +91,7 @@ $cnt=$cnt+1;
 				classie.toggle( body, 'cbp-spmenu-push-toright' );
 				classie.toggle( menuLeft, 'cbp-spmenu-open' );
 				disableOther( 'showLeftPush' );
-			};
+		$cnt=$cnt+1	};
 			
 			function disableOther( button ) {
 				if( button !== 'showLeftPush' ) {

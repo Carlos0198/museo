@@ -32,7 +32,7 @@ if(isset($_POST['submit']))
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Museo | Detalle de Cita</title>
+<title>Museo | Detalle de Visita</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -74,7 +74,7 @@ if(isset($_POST['submit']))
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="tables">
-					<h3 class="title1">Detalle de Cita</h3>
+					<h3 class="title1">Detalle de Visita</h3>
 					
 					
 				
@@ -82,7 +82,7 @@ if(isset($_POST['submit']))
 						<p style="font-size:16px; color:red" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
-						<h4>Ver Cita:</h4>
+						<h4>Ver Visita:</h4>
 						<?php
 $cid=$_GET['viewid'];
 $ret=mysqli_query($con,"select * from tblappointment where ID='$cid'");
@@ -92,7 +92,7 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>
 						<table class="table table-bordered">
 							<tr>
-    <th>Número de Cita</th>
+    <th>Número de Visita</th>
     <td><?php  echo $row['AptNumber'];?></td>
   </tr>
   <tr>
@@ -109,12 +109,12 @@ while ($row=mysqli_fetch_array($ret)) {
     <td><?php  echo $row['PhoneNumber'];?></td>
   </tr>
    <tr>
-    <th>Fecha de Cita</th>
+    <th>Fecha de Visita</th>
     <td><?php  echo $row['AptDate'];?></td>
   </tr>
  
 <tr>
-    <th>Hora de Cita</th>
+    <th>Hora de Visita</th>
     <td><?php  echo $row['AptTime'];?></td>
   </tr>
   

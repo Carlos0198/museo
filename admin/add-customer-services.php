@@ -27,7 +27,7 @@ echo "<script>window.location.href ='invoices.php'</script>";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>SPA | Asignar Servicio Cliente</title>
+<title>Museo | Asignar Servicio Cliente</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -76,7 +76,7 @@ echo "<script>window.location.href ='invoices.php'</script>";
 					<div class="table-responsive bs-example widget-shadow">
 						<h4>Asignar Servicio:</h4>
 <form method="post">
-						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th>Nombre de Servicio</th> <th>Acción</th> </tr> </thead> <tbody>
+						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th>Nombre de Servicio</th></tr> </thead> <tbody>
 <?php
 $ret=mysqli_query($con,"select *from  tblservices");
 $cnt=1;
@@ -88,15 +88,15 @@ while ($row=mysqli_fetch_array($ret)) {
 <th scope="row"><?php echo $cnt;?></th> 
 <td><?php  echo $row['ServiceName'];?></td> 
 
-<td><input type="checkbox" name="sids[]" value="<?php  echo $row['ID'];?>" ></td> 
+ 
 </tr>   
 <?php 
 $cnt=$cnt+1;
 }?>
 <tr>
-<td colspan="4" align="center">
+<!-- <td colspan="4" align="center">
 <button type="submit" name="submit" class="btn btn-default">Enviar</button>		
-</td>
+</td> -->
 
 </tr>
 
